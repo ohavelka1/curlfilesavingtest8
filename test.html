@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bypassnul jsem firewall blokaci</title>
+    <title>Color Changing Background</title>
     <style>
         html, body {
             height: 100%;
@@ -11,16 +11,33 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background: linear-gradient(0deg, blue, darkgray);
-            background-size: 400% 400%;
-            animation: backgroundFade 1s infinite alternate;
+            background-color: rgb(255, 0, 0); /* Starting with red */
+            animation: rainbowChange 12s infinite alternate;
             font-family: Arial, sans-serif;
         }
 
-        @keyframes backgroundFade {
-            0% { background-position: 0% 50%; }
-            50% { background-position: 100% 50%; }
-            100% { background-position: 0% 50%; }
+        @keyframes rainbowChange {
+            0% {
+                background-color: rgb(255, 0, 0); /* Red */
+            }
+            16% {
+                background-color: rgb(255, 165, 0); /* Orange */
+            }
+            33% {
+                background-color: rgb(255, 255, 0); /* Yellow */
+            }
+            50% {
+                background-color: rgb(0, 128, 0); /* Green */
+            }
+            66% {
+                background-color: rgb(0, 0, 255); /* Blue */
+            }
+            83% {
+                background-color: rgb(75, 0, 130); /* Indigo */
+            }
+            100% {
+                background-color: rgb(238, 130, 238); /* Violet */
+            }
         }
 
         h1 {
@@ -31,6 +48,6 @@
     </style>
 </head>
 <body>
-    <h1>Bypassnul jsem firewall blokaci</h1>
+    <h1>Big Text</h1>
 </body>
 </html>
